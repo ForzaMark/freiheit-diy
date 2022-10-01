@@ -1,0 +1,21 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Assets.StateManagement
+{
+    class FinishGameControlExplanation : State
+    {
+        public FinishGameControlExplanation(GameSystem gameSystem) : base(gameSystem) { }
+
+        public override IEnumerator Execute()
+        {
+            GameSystem.AudioManager.PlayClipSync(Scripts.AudioClipNames.FinishControlsExplanationAudioClip);
+            yield return new WaitForSeconds(2f);
+
+            GameSystem.ControlsTestObjectCube.SetActive(false);
+
+            GameSystem.SetState(new WalkToTable(GameSystem));
+        }
+    }
+}
