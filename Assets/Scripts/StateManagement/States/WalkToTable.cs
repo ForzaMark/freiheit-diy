@@ -15,10 +15,6 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            // remove this teleportation dummy
-            GameSystem.XROrigin.transform.eulerAngles = new Vector3(10, -28, -2);
-            GameSystem.XROrigin.transform.position = new Vector3(-10, 8, 9);
-
             GameSystem.UiEventsMessageBroker.PlayerArrivedAtTableEvent.AddListener(OnPlayerArrivedAtTableEvent);
             yield break;
         }

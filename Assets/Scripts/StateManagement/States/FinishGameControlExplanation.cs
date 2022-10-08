@@ -15,7 +15,14 @@ namespace Assets.StateManagement
 
             GameSystem.ControlsTestObjectCube.SetActive(false);
 
+            EnablePlayerMovement();
+
             GameSystem.SetState(new WalkToTable(GameSystem));
+        }
+
+        private void EnablePlayerMovement() {
+            GameSystem.XROrigin.GetComponent<CharacterController>().enabled = true;
+            GameSystem.XROrigin.GetComponent<ContinuousMovement>().enabled = true;
         }
     }
 }
