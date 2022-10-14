@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -453,8 +453,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.3641667, y: 13.468769, z: 3.4744031}
-  m_Center: {x: -0.49932718, y: 0, z: 0.97881263}
+  m_Size: {x: 4.3895764, y: 13.468769, z: 1.4024321}
+  m_Center: {x: -0.41620097, y: -0.0000000014056711, z: 0.65030503}
 --- !u!114 &206701073
 MonoBehaviour:
   m_ObjectHideFlags: 0
