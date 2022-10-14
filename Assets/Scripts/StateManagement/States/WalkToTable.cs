@@ -11,7 +11,7 @@ namespace Assets.StateManagement
 {
     public class WalkToTable : State
     {
-        public WalkToTable(GameSystem gameSystem) : base(gameSystem) { }
+        public WalkToTable(GameSystem gameSystem) : base(gameSystem, StateName.WalkToTable) { }
 
         public override IEnumerator Execute()
         {

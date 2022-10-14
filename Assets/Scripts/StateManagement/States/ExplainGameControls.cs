@@ -7,7 +7,7 @@ namespace Assets.StateManagement
 {
     public class ExplainGameControls : State
     {
-        public ExplainGameControls(GameSystem gameSystem) : base(gameSystem) { }
+        public ExplainGameControls(GameSystem gameSystem) : base(gameSystem, StateName.ExplainGameControl) { }
 
         public override IEnumerator Execute()
         {
