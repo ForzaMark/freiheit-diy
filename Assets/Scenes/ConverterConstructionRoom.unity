@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputSource: 5
-  speed: 1
+  speed: 3
 --- !u!143 &206701071
 CharacterController:
   m_ObjectHideFlags: 0
