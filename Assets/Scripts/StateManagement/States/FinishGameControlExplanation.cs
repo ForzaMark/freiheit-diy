@@ -6,7 +6,7 @@ namespace Assets.StateManagement
 {
     class FinishGameControlExplanation : State
     {
-        public FinishGameControlExplanation(GameSystem gameSystem) : base(gameSystem) { }
+        public FinishGameControlExplanation(GameSystem gameSystem) : base(gameSystem, StateName.FinishGameControlExplanation) { }
 
         public override IEnumerator Execute()
         {
