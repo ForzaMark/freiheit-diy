@@ -8,7 +8,7 @@ namespace Assets.StateManagement
 {
     public class ConverterConstruction : State
     {
-        public ConverterConstruction(GameSystem gameSystem) : base(gameSystem) { }
+        public ConverterConstruction(GameSystem gameSystem) : base(gameSystem, StateName.ConverterConstruction) { }
 
         public override IEnumerator Execute()
         {

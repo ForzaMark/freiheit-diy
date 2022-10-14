@@ -7,7 +7,7 @@ namespace Assets.StateManagement
 {
     public class GrabTestGameObject : State
     {
-        public GrabTestGameObject(GameSystem gameSystem) : base(gameSystem) { }
+        public GrabTestGameObject(GameSystem gameSystem) : base(gameSystem, StateName.GrabTestGameObject) { }
 
         public override IEnumerator Execute()
         {

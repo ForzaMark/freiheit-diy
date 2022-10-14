@@ -14,8 +14,11 @@ namespace Assets.StateManagement
 
         public void SetState(State state)
         {
-            State = state;
-            StartCoroutine(state.Execute());
+            if (State == null || State.StateName != state.StateName)
+            {
+                State = state;
+                StartCoroutine(state.Execute());
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Assets.StateManagement
 {
     public class ExplainInitialStory : State
     {
-        public ExplainInitialStory(GameSystem gameSystem): base(gameSystem) { }
+        public ExplainInitialStory(GameSystem gameSystem): base(gameSystem, StateName.ExplainInitialStory) { }
 
         public override IEnumerator Execute()
         {
