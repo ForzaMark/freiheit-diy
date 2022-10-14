@@ -9,7 +9,7 @@ public class OnCollisionWithPlayerTablePosition : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "TransistorTargetArea")
+        if (collision.gameObject.name == "PlayerTablePositionColliderArea")
         {
             UiEventsMessageBroker.PlayerArrivedAtTable();
         }
