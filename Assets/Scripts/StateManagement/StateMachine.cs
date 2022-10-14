@@ -14,7 +14,7 @@ namespace Assets.StateManagement
 
         public void SetState(State state)
         {
-            if (State == null || State.StateName != state.StateName)
+            if (State?.StateName != state?.StateName)
             {
                 State = state;
                 StartCoroutine(state.Execute());
