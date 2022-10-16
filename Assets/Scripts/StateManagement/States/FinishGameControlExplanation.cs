@@ -16,6 +16,7 @@ namespace Assets.StateManagement
             GameSystem.ControlsTestObjectCube.SetActive(false);
 
             EnablePlayerMovement();
+            EnablePlayerTableColliderArea();
 
             GameSystem.SetState(new WalkToTable(GameSystem));
         }
@@ -23,6 +24,11 @@ namespace Assets.StateManagement
         private void EnablePlayerMovement() {
             GameSystem.XROrigin.GetComponent<CharacterController>().enabled = true;
             GameSystem.XROrigin.GetComponent<ContinuousMovement>().enabled = true;
+        }
+
+        private void EnablePlayerTableColliderArea()
+        {
+            GameSystem.PlayerTablePositionColliderArea.SetActive(true);
         }
     }
 }

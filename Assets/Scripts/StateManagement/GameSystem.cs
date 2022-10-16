@@ -48,6 +48,9 @@ namespace Assets.StateManagement
         [SerializeField]
         public GameObject XROrigin;
 
+        [SerializeField]
+        public GameObject PlayerTablePositionColliderArea;
+
         [HideInInspector]
         public AudioSource AudioSource;
 
