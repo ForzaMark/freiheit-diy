@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using System.Collections;
 using Assets.Scripts;
 
 namespace Assets.StateManagement
@@ -15,10 +9,6 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            // remove this teleportation dummy
-            GameSystem.XROrigin.transform.eulerAngles = new Vector3(10, -28, -2);
-            GameSystem.XROrigin.transform.position = new Vector3(-10, 8, 9);
-
             GameSystem.UiEventsMessageBroker.PlayerArrivedAtTableEvent.AddListener(OnPlayerArrivedAtTableEvent);
             yield break;
         }

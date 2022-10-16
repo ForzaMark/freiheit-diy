@@ -21,4 +21,9 @@ public class BlinkEffect : MonoBehaviour
     {
         renderer.material.color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time * speed, 1));
     }
+
+    private void OnDisable()
+    {
+        renderer.material.color = endColor;
+    }
 }

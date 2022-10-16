@@ -10,16 +10,6 @@ namespace Assets.Scripts.UiEventHandlers
         public UiEventsMessageBrokerTemplate UiEventsMessageBroker;
 
         private bool IsTransistorInTargetArea = false;
-        private Rigidbody TransistorRigidBody;
-        private void Start()
-        {
-            TransistorRigidBody = GetComponent<Rigidbody>();
-        }
-
-        public void OnControlsTestObjectMove()
-        {
-            UiEventsMessageBroker.PlayerPlacedTransistorCorrectly();
-        }
 
         public void OnTransistorPlaced()
         {

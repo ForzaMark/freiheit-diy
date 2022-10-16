@@ -13,68 +13,38 @@ public class AnimateTransistorTargetAreaOnTransistorGrabed : MonoBehaviour
 {
     [SerializeField] GameObject TransistorTargetArea;
 
-    private EmissionStates EmissionState = EmissionStates.ShutDown;
-    private bool EnableEmission = false;
+    private Color initialEndColor;
+
+    private void Awake()
+    {
+        initialEndColor = TransistorTargetArea.GetComponent<BlinkEffect>().endColor;
+    }
 
     public void OnTransistorSelected()
     {
-        this.EmissionState = EmissionStates.Switching;
+        TransistorTargetArea.GetComponent<BlinkEffect>().enabled = true;
     }
 
     public void OnTransistorDropped()
     {
-        this.EmissionState = EmissionStates.ShutDown;
+        TransistorTargetArea.GetComponent<BlinkEffect>().enabled = false;
     }
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "TransistorTargetArea")
-        {
-            this.EmissionState = EmissionStates.PermanentEnabled;
-        }
+        TransistorTargetArea.GetComponent<BlinkEffect>().endColor = TransistorTargetArea.GetComponent<BlinkEffect>().startColor;
     }
 
     public void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "TransistorTargetArea")
+        var isBlinkEnabled = TransistorTargetArea.GetComponent<BlinkEffect>().enabled;
+
+        if (isBlinkEnabled)
         {
-            this.EmissionState = this.EmissionState == EmissionStates.ShutDown ?
-                                                       EmissionStates.ShutDown :
-                                                       EmissionStates.Switching;
-        }
-    }
-
-    public void Awake()
-    {
-        float duration = 0.2F;
-        InvokeRepeating(nameof(HandleEmissionState), 0, duration);
-    }
-
-    private void HandleEmissionState()
-    {
-        if (this.EmissionState == EmissionStates.Switching)
+            TransistorTargetArea.GetComponent<BlinkEffect>().endColor = initialEndColor;
+        } else
         {
-            if (this.EnableEmission)
-            {
-                var material = TransistorTargetArea.GetComponent<Renderer>().material;
-                material.EnableKeyword("_EMISSION");
-            }
-            else
-            {
-                TransistorTargetArea.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
-            }
-            this.EnableEmission = !this.EnableEmission;
-        }
-
-
-        if (this.EmissionState == EmissionStates.PermanentEnabled)
-        {
-            TransistorTargetArea.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
-        }
-
-        if (this.EmissionState == EmissionStates.ShutDown)
-        {
-            TransistorTargetArea.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+            TransistorTargetArea.GetComponent<BlinkEffect>().enabled = false;
         }
     }
 }

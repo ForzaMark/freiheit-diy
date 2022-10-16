@@ -453,8 +453,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 13.468769, z: 1}
-  m_Center: {x: -0.3, y: 0.0000000032869403, z: -1}
+  m_Size: {x: 1, y: 25.366457, z: 1}
+  m_Center: {x: -0.30000004, y: -5.9488115, z: -0.9999771}
 --- !u!114 &206701073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3147,6 +3147,10 @@ PrefabInstance:
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Assets.Scripts.UiEventHandlers.OnPlayerPlacedTransistorCorrectly, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5498782205925717117, guid: 8348a60eebdbaa84aa7d621629d0157c, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AnimateTransistorTargetAreaOnTransistorGrabed, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5498782205925717118, guid: 8348a60eebdbaa84aa7d621629d0157c, type: 3}
       propertyPath: TransistorTargetArea
       value: 
@@ -3191,3 +3195,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5498782205633136714, guid: 8348a60eebdbaa84aa7d621629d0157c, type: 3}
   m_PrefabInstance: {fileID: 5498782206260960243}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5498782206260960245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498782206260960244}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fc2526b8027614ca37f77f814cc88c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 0.06289297, g: 1, b: 0.22986266, a: 0}
+  endColor: {r: 0.8, g: 0.45882353, b: 0.2901961, a: 0}
+  speed: 3
