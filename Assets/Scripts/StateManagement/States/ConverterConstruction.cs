@@ -18,10 +18,12 @@ namespace Assets.StateManagement
 
         private void OnPlayerPlacedTransistorCorrectly(bool value) 
         {
+            GameSystem.AudioManager.PlayClipAsync(AudioClipNames.PlayerPlacedTransistorCorrectlyAudioClip);
+
             GameSystem.Transistor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+
             var videoComponent = GameSystem.VideoPlayer.GetComponent<VideoPlayer>();
             videoComponent.clip = GameSystem.SuccessVideo;
-            GameSystem.AudioManager.PlayClipSync(AudioClipNames.PlayerPlacedTransistorCorrectlyAudioClip);
         }
     }
 }

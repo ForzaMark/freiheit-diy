@@ -11,8 +11,7 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            yield return new WaitForSeconds(2f);
-            yield return GameSystem.AudioManager.PlayClipAsync(AudioClipNames.InitialStoryAudioClip);
+            yield return GameSystem.AudioManager.PlayClipSync(AudioClipNames.InitialStoryAudioClip);
             GameSystem.SetState(new ExplainGameControls(GameSystem));
         }
     }

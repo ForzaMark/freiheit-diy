@@ -15,7 +15,7 @@ namespace Assets.StateManagement
 
         private void OnPlayerArrivedAtTableEvent(bool value)
         {
-            GameSystem.AudioManager.PlayClipSync(AudioClipNames.PlayerArrivedAtTableAudioClip);
+            GameSystem.AudioManager.PlayClipAsync(AudioClipNames.PlayerArrivedAtTableAudioClip);
             GameSystem.PlayerTablePositionColliderArea.SetActive(false);
             GameSystem.SetState(new ConverterConstruction(GameSystem));
         }  

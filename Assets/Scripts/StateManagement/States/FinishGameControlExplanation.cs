@@ -10,7 +10,7 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            GameSystem.AudioManager.PlayClipSync(Scripts.AudioClipNames.FinishControlsExplanationAudioClip);
+            yield return GameSystem.AudioManager.PlayClipSync(Scripts.AudioClipNames.FinishControlsExplanationAudioClip);
             yield return new WaitForSeconds(2f);
 
             GameSystem.ControlsTestObjectCube.SetActive(false);

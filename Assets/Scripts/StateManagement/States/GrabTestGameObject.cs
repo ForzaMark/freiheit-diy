@@ -11,7 +11,7 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            GameSystem.AudioManager.PlayClipSync(AudioClipNames.GrabAndMoveTestObjectAudioClip);
+            yield return GameSystem.AudioManager.PlayClipSync(AudioClipNames.GrabAndMoveTestObjectAudioClip);
 
             GameSystem.UiEventsMessageBroker.ControlsTestObjectMovedEvent.AddListener(TestObjectMovedAction);
             yield break;
