@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using Assets.Scripts;
@@ -22,8 +21,9 @@ namespace Assets.StateManagement
 
             GameSystem.Transistor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 
-            var videoComponent = GameSystem.VideoPlayer.GetComponent<VideoPlayer>();
+            var videoComponent = GameSystem.VideoScreen.GetComponent<VideoPlayer>();
             videoComponent.clip = GameSystem.SuccessVideo;
+            videoComponent.Play();
         }
     }
 }
