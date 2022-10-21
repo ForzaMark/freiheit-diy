@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Assets.Scripts;
+using UnityEngine;
 
 namespace Assets.StateManagement
 {
@@ -10,12 +11,21 @@ namespace Assets.StateManagement
         public override IEnumerator Execute()
         {
             GameSystem.UiEventsMessageBroker.PlayerArrivedAtTableEvent.AddListener(OnPlayerArrivedAtTableEvent);
+
+            GameSystem.EnvironmentManager.MovePlayerByTeleportation();
+
             yield break;
         }
 
         public override void Dispose()
         {
             GameSystem.UiEventsMessageBroker.PlayerArrivedAtTableEvent.RemoveListener(OnPlayerArrivedAtTableEvent);
+        }
+
+        public static void MovePlayerByTeleportation(GameObject xrOrigin)
+        {
+            xrOrigin.transform.eulerAngles = new Vector3(10, -28, -2);
+            xrOrigin.transform.position = new Vector3(-10, 8, 9);
         }
 
         private void OnPlayerArrivedAtTableEvent(bool value)
