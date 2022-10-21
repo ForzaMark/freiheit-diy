@@ -12,7 +12,7 @@ namespace Assets.StateManagement
             yield return GameSystem.AudioManager.PlayClipSync(Scripts.AudioClipNames.FinishControlsExplanationAudioClip);
             GameSystem.ControlsTestObjectCube.SetActive(false);
 
-            GameSystem.EnvironmentManager.ProvideEnablePlayerMovementImplementation();
+            GameSystem.EnvironmentManager.EnablePlayerMovement();
             EnablePlayerTableColliderArea();
 
             GameSystem.SetState(new WalkToTable(GameSystem));

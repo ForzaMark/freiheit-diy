@@ -15,13 +15,13 @@ namespace Assets.Scripts
         private readonly Action<CharacterController, ContinuousMovement> EnablePlayerMovementCallback;
 
         private readonly GameObject XrOrigin;
-        private readonly Action<GameObject> MovePlayerByTeleportation;
+        private readonly Action<GameObject> MovePlayerByTeleportationCallback;
         public EnvironmentManager(
             GameEnvironment environment, 
             GameObject xrDeviceSimulator,
             GameObject xrOrigin,
             Action<CharacterController, ContinuousMovement> enablePlayerMovementCallback,
-            Action<GameObject> movePlayerByTeleportation)
+            Action<GameObject> movePlayerByTeleportationCallback)
         {
             Environment = environment;
             XrDeviceSimulator = xrDeviceSimulator;
@@ -29,7 +29,7 @@ namespace Assets.Scripts
             ContinuousMovement = xrOrigin.GetComponent<ContinuousMovement>();
             EnablePlayerMovementCallback = enablePlayerMovementCallback;
             XrOrigin = xrOrigin;
-            MovePlayerByTeleportation = movePlayerByTeleportation;
+            MovePlayerByTeleportationCallback = movePlayerByTeleportationCallback;
 
             ActivateDeviceSimulator();
         }
@@ -46,7 +46,7 @@ namespace Assets.Scripts
             }
         }
 
-        public void ProvideEnablePlayerMovementImplementation()
+        public void EnablePlayerMovement()
         {
             if (Environment == GameEnvironment.LocalDevelopmentWithVRHeadset || Environment == GameEnvironment.Production)
             {
@@ -54,11 +54,11 @@ namespace Assets.Scripts
             }
         }
 
-        public void ProvideTeleportationImplementation()
+        public void MovePlayerByTeleportation()
         {
             if (Environment == GameEnvironment.LocalDevelopmentWithMockHeadset)
             {
-                MovePlayerByTeleportation(XrOrigin);
+                MovePlayerByTeleportationCallback(XrOrigin);
             }
         }
 

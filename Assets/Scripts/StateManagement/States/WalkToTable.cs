@@ -12,7 +12,7 @@ namespace Assets.StateManagement
         {
             GameSystem.UiEventsMessageBroker.PlayerArrivedAtTableEvent.AddListener(OnPlayerArrivedAtTableEvent);
 
-            GameSystem.EnvironmentManager.ProvideTeleportationImplementation();
+            GameSystem.EnvironmentManager.MovePlayerByTeleportation();
 
             yield break;
         }
