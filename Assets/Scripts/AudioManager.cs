@@ -25,16 +25,17 @@ namespace Assets.Scripts
             AudioSource = audioSource;
         }
 
-        public IEnumerator PlayClipAsync(AudioClipNames audioClipName)
+        public IEnumerator PlayClipSync(AudioClipNames audioClipName, float speed = 1)
         {
             var audioClip = GetAudioClip(audioClipName);
             AudioSource.clip = audioClip;
+            AudioSource.pitch = speed;
             AudioSource.Play();
 
-            yield return new WaitForSeconds(AudioSource.clip.length);
+            yield return new WaitForSeconds(AudioSource.clip.length / speed);
         }
 
-        public void PlayClipSync(AudioClipNames audioClipName)
+        public void PlayClipAsync(AudioClipNames audioClipName)
         {
             var audioClip = GetAudioClip(audioClipName);
             AudioSource.clip = audioClip;

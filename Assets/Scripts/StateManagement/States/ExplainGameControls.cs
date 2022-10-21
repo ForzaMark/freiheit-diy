@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Assets.Scripts;
 
 namespace Assets.StateManagement
@@ -11,11 +9,17 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            GameSystem.AudioManager.PlayClipSync(AudioClipNames.MoveAndTargetTestObjectAudioClip);
+            yield return GameSystem.AudioManager.PlayClipSync(AudioClipNames.MoveAndTargetTestObjectAudioClip);
+
             GameSystem.ControlsTestObjectCube.SetActive(true);
 
             GameSystem.UiEventsMessageBroker.ControlsTestObjectHoveredEvent.AddListener(TestObjectHoveredAction);
             yield break;
+        }
+
+        public override void Dispose()
+        {
+            GameSystem.UiEventsMessageBroker.ControlsTestObjectHoveredEvent.RemoveListener(TestObjectHoveredAction);
         }
 
         private void TestObjectHoveredAction(bool value)

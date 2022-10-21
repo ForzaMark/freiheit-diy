@@ -29,6 +29,11 @@ namespace Assets.StateManagement
         {
             yield break;
         }
+
+        public virtual void Dispose()
+        {
+
+        }
     }
 }
 

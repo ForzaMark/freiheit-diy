@@ -13,9 +13,14 @@ namespace Assets.StateManagement
             yield break;
         }
 
+        public override void Dispose()
+        {
+            GameSystem.UiEventsMessageBroker.PlayerArrivedAtTableEvent.RemoveListener(OnPlayerArrivedAtTableEvent);
+        }
+
         private void OnPlayerArrivedAtTableEvent(bool value)
         {
-            GameSystem.AudioManager.PlayClipSync(AudioClipNames.PlayerArrivedAtTableAudioClip);
+            GameSystem.AudioManager.PlayClipAsync(AudioClipNames.PlayerArrivedAtTableAudioClip);
             GameSystem.PlayerTablePositionColliderArea.SetActive(false);
             GameSystem.SetState(new ConverterConstruction(GameSystem));
         }  

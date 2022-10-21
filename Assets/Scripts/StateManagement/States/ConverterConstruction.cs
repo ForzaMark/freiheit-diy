@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using Assets.Scripts;
@@ -16,12 +15,20 @@ namespace Assets.StateManagement
             yield break;
         }
 
+        public override void Dispose()
+        {
+            GameSystem.UiEventsMessageBroker.PlayerPlacedTransistorCorrectlyEvent.RemoveListener(OnPlayerPlacedTransistorCorrectly);
+        }
+
         private void OnPlayerPlacedTransistorCorrectly(bool value) 
         {
+            GameSystem.AudioManager.PlayClipAsync(AudioClipNames.PlayerPlacedTransistorCorrectlyAudioClip);
+
             GameSystem.Transistor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            var videoComponent = GameSystem.VideoPlayer.GetComponent<VideoPlayer>();
+
+            var videoComponent = GameSystem.VideoScreen.GetComponent<VideoPlayer>();
             videoComponent.clip = GameSystem.SuccessVideo;
-            GameSystem.AudioManager.PlayClipSync(AudioClipNames.PlayerPlacedTransistorCorrectlyAudioClip);
+            videoComponent.Play();
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Assets.StateManagement
         public GameObject Transistor;
 
         [SerializeField] 
-        public GameObject VideoPlayer;
+        public GameObject VideoScreen;
 
         [SerializeField] 
         public VideoClip SuccessVideo;

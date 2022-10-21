@@ -11,10 +11,15 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            GameSystem.AudioManager.PlayClipSync(AudioClipNames.GrabAndMoveTestObjectAudioClip);
+            GameSystem.AudioManager.PlayClipAsync(AudioClipNames.GrabAndMoveTestObjectAudioClip);
 
             GameSystem.UiEventsMessageBroker.ControlsTestObjectMovedEvent.AddListener(TestObjectMovedAction);
             yield break;
+        }
+
+        public override void Dispose()
+        {
+            GameSystem.UiEventsMessageBroker.ControlsTestObjectMovedEvent.RemoveListener(TestObjectMovedAction);
         }
 
         private void TestObjectMovedAction(bool value)
