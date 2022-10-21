@@ -9,8 +9,9 @@ namespace Assets.StateManagement
 
         public override IEnumerator Execute()
         {
-            GameSystem.ControlsTestObjectCube.SetActive(true);
             yield return GameSystem.AudioManager.PlayClipSync(AudioClipNames.MoveAndTargetTestObjectAudioClip);
+
+            GameSystem.ControlsTestObjectCube.SetActive(true);
 
             GameSystem.UiEventsMessageBroker.ControlsTestObjectHoveredEvent.AddListener(TestObjectHoveredAction);
             yield break;
