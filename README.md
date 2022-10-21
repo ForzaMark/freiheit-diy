@@ -23,3 +23,14 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
   - If you want to test the application with a connected VR Headset use "Local Development with VR Headset"
   - If you want to test a production build of the application on a connected VR Headset use "Production" 
     - The application usually targets the Quest 2. For other VR Headsets you probably need to tweak the Project and Build Settings   
+
+
+## :speaker: Sounds
+- You can find a transcription of all sounds under https://github.com/ForzaMark/freiheit-diy/tree/main/Assets/Sounds
+- The order in which the sounds are played in the game is:
+  - IntroductionStory
+  - MoveAndTargetTestObject
+  - GrabAndMoveTestObject
+  - FinishGameControlExplanation
+  - PlayerArrivedAtTable
+  - PlayerPlacedTransistorCorrectly
