@@ -13,6 +13,11 @@ namespace Assets.StateManagement
             yield break;
         }
 
+        public override void Dispose()
+        {
+            GameSystem.UiEventsMessageBroker.PlayerArrivedAtTableEvent.RemoveListener(OnPlayerArrivedAtTableEvent);
+        }
+
         private void OnPlayerArrivedAtTableEvent(bool value)
         {
             GameSystem.AudioManager.PlayClipAsync(AudioClipNames.PlayerArrivedAtTableAudioClip);

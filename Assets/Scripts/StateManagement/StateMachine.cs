@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.StateManagement
 {
@@ -16,9 +11,20 @@ namespace Assets.StateManagement
         {
             if (State?.StateName != state?.StateName)
             {
-                State = state;
-                StartCoroutine(state.Execute());
+                DisposeOldState();
+                SetNewState(state);
             }
+        }
+
+        private void DisposeOldState()
+        {
+            State?.Dispose();
+        }
+
+        private void SetNewState(State newState)
+        {
+            State = newState;
+            StartCoroutine(newState.Execute());
         }
     }
 }

@@ -15,6 +15,11 @@ namespace Assets.StateManagement
             yield break;
         }
 
+        public override void Dispose()
+        {
+            GameSystem.UiEventsMessageBroker.PlayerPlacedTransistorCorrectlyEvent.RemoveListener(OnPlayerPlacedTransistorCorrectly);
+        }
+
         private void OnPlayerPlacedTransistorCorrectly(bool value) 
         {
             GameSystem.AudioManager.PlayClipAsync(AudioClipNames.PlayerPlacedTransistorCorrectlyAudioClip);

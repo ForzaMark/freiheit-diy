@@ -16,6 +16,11 @@ namespace Assets.StateManagement
             yield break;
         }
 
+        public override void Dispose()
+        {
+            GameSystem.UiEventsMessageBroker.ControlsTestObjectHoveredEvent.RemoveListener(TestObjectHoveredAction);
+        }
+
         private void TestObjectHoveredAction(bool value)
         {
             GameSystem.SetState(new GrabTestGameObject(GameSystem));
