@@ -2,7 +2,6 @@
 using UnityEngine;
 using Assets.Scripts;
 using UnityEngine.Video;
-using UnityEngine.XR;
 
 namespace Assets.StateManagement
 {
@@ -58,6 +57,9 @@ namespace Assets.StateManagement
         [SerializeField]
         public Environment Environment;
 
+        [SerializeField]
+        public GameObject XrDeviceSimulator;
+
         [HideInInspector]
         public AudioSource AudioSource;
 
@@ -66,7 +68,7 @@ namespace Assets.StateManagement
 
         private void Start()
         {
-            var environmentManager = new EnvironmentManager(Environment);
+            var environmentManager = new EnvironmentManager(Environment, XrDeviceSimulator);
 
             AudioSource = GetComponent<AudioSource>();
 
