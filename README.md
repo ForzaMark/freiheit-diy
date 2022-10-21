@@ -1,7 +1,7 @@
 # Freiheit-DIY :tv:
 
 Ein VR-Spiel zu Amatuerelektronik, Zäsur und Informationsfreiheit in der DDR.
-Dieses Projekt ist entstanden in Kooperation mit [Coding da Vinci](https://codingdavinci.de/) und dem [Zuse Computer Museum Hoyerswerda](https://zuse-computer-museum.com/)
+Ein Projekt von Anna Rauscher, Margret Schild und [Mark Heimer](me.cratory.de) in Kooperation mit [Coding da Vinci](https://codingdavinci.de/) und dem [Zuse Computer Museum Hoyerswerda](https://zuse-computer-museum.com/)
 
 ## :white_check_mark: Prerequisite
 - Unity 2020.3.31f1
