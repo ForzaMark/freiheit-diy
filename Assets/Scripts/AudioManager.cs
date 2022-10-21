@@ -15,39 +15,49 @@ namespace Assets.Scripts
         PlayerPlacedTransistorCorrectlyAudioClip
     }
 
+    public class AudioClipWithSpeed
+    {
+        public AudioClip AudioClip;
+        public float Speed;
+
+        public AudioClipWithSpeed(AudioClip audioClip, float speed = 1)
+        {
+            AudioClip = audioClip;
+            Speed = speed;
+        }
+    }
+
     public class AudioManager
     {
-        private readonly Dictionary<AudioClipNames, AudioClip> ClipConfiguration;
+        private readonly Dictionary<AudioClipNames, AudioClipWithSpeed> ClipConfiguration;
         private readonly AudioSource AudioSource;
 
-        public AudioManager(Dictionary<AudioClipNames, AudioClip> configuration, AudioSource audioSource) {
+        public AudioManager(Dictionary<AudioClipNames, AudioClipWithSpeed> configuration, AudioSource audioSource) {
             ClipConfiguration = configuration;
             AudioSource = audioSource;
         }
 
-        public IEnumerator PlayClipSync(AudioClipNames audioClipName, float speed = 1)
+        public IEnumerator PlayClipSync(AudioClipNames audioClipName)
         {
             var audioClip = GetAudioClip(audioClipName);
-            AudioSource.clip = audioClip;
-            AudioSource.pitch = speed;
+            AudioSource.clip = audioClip.AudioClip;
+            AudioSource.pitch = audioClip.Speed;
             AudioSource.Play();
 
-            yield return new WaitForSeconds(AudioSource.clip.length / speed);
+            yield return new WaitForSeconds(AudioSource.clip.length / audioClip.Speed);
         }
 
         public void PlayClipAsync(AudioClipNames audioClipName)
         {
             var audioClip = GetAudioClip(audioClipName);
-            AudioSource.clip = audioClip;
+            AudioSource.clip = audioClip.AudioClip;
             AudioSource.Play();
         }
 
-        private AudioClip GetAudioClip(AudioClipNames audioClipName) 
+        private AudioClipWithSpeed GetAudioClip(AudioClipNames audioClipName) 
         {
-            if(ClipConfiguration.TryGetValue(audioClipName, out var value)) {
-                AudioSource.clip = value;
-                AudioSource.Play();
-
+            if(ClipConfiguration.TryGetValue(audioClipName, out var value)) 
+            { 
                 return value;
             } else
             {

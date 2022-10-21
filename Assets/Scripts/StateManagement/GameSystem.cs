@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts;
 using UnityEngine.Video;
+using UnityEngine.XR;
 
 namespace Assets.StateManagement
 {
+    public enum Environment
+    {
+        LocalDevelopmentWithMockHeadset,
+        LocalDevelopmentWithVRHeadset,
+        Production
+    }
+
     [RequireComponent(typeof(AudioSource))]
     public class GameSystem : StateMachine
     {
@@ -51,6 +55,9 @@ namespace Assets.StateManagement
         [SerializeField]
         public GameObject PlayerTablePositionColliderArea;
 
+        [SerializeField]
+        public Environment Environment;
+
         [HideInInspector]
         public AudioSource AudioSource;
 
@@ -59,16 +66,20 @@ namespace Assets.StateManagement
 
         private void Start()
         {
+            var environmentManager = new EnvironmentManager(Environment);
+
             AudioSource = GetComponent<AudioSource>();
-            AudioManager = new AudioManager(new Dictionary<AudioClipNames, AudioClip>
+
+            AudioManager = new AudioManager(new Dictionary<AudioClipNames, AudioClipWithSpeed>
             {
-                { AudioClipNames.InitialStoryAudioClip, InitialStoryAudioClip },
-                { AudioClipNames.MoveAndTargetTestObjectAudioClip, MoveAndTargetTestObjectAudioClip },
-                { AudioClipNames.GrabAndMoveTestObjectAudioClip, GrabAndMoveTestObjectAudioClip },
-                { AudioClipNames.FinishControlsExplanationAudioClip, FinishGameControlExplanationAudioClip },
-                { AudioClipNames.PlayerArrivedAtTableAudioClip, PlayerArrivedAtTableAudioClip },
-                { AudioClipNames.PlayerPlacedTransistorCorrectlyAudioClip, PlayerPlacedTransistorCorrectlyAudioClip }
+                { AudioClipNames.InitialStoryAudioClip, new AudioClipWithSpeed(InitialStoryAudioClip, environmentManager.GetInitialStorySpeed() ) },
+                { AudioClipNames.MoveAndTargetTestObjectAudioClip, new AudioClipWithSpeed(MoveAndTargetTestObjectAudioClip) },
+                { AudioClipNames.GrabAndMoveTestObjectAudioClip, new AudioClipWithSpeed(GrabAndMoveTestObjectAudioClip) },
+                { AudioClipNames.FinishControlsExplanationAudioClip, new AudioClipWithSpeed(FinishGameControlExplanationAudioClip) },
+                { AudioClipNames.PlayerArrivedAtTableAudioClip, new AudioClipWithSpeed(PlayerArrivedAtTableAudioClip) },
+                { AudioClipNames.PlayerPlacedTransistorCorrectlyAudioClip, new AudioClipWithSpeed(PlayerPlacedTransistorCorrectlyAudioClip) }
             }, AudioSource);
+
             SetState(new ExplainInitialStory(this));
         }
     }
