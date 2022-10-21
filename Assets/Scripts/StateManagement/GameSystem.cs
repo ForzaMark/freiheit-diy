@@ -5,7 +5,7 @@ using UnityEngine.Video;
 
 namespace Assets.StateManagement
 {
-    public enum Environment
+    public enum GameEnvironment
     {
         LocalDevelopmentWithMockHeadset,
         LocalDevelopmentWithVRHeadset,
@@ -55,7 +55,7 @@ namespace Assets.StateManagement
         public GameObject PlayerTablePositionColliderArea;
 
         [SerializeField]
-        public Environment Environment;
+        public GameEnvironment Environment;
 
         [SerializeField]
         public GameObject XrDeviceSimulator;
@@ -66,15 +66,24 @@ namespace Assets.StateManagement
         [HideInInspector]
         public AudioManager AudioManager;
 
+        [HideInInspector]
+        public EnvironmentManager EnvironmentManager;
+
         private void Start()
         {
-            var environmentManager = new EnvironmentManager(Environment, XrDeviceSimulator);
+            EnvironmentManager = new EnvironmentManager(
+                Environment, 
+                XrDeviceSimulator,
+                XROrigin,
+                FinishGameControlExplanation.EnablePlayerMovement,
+                WalkToTable.MovePlayerByTeleportation
+            );
 
             AudioSource = GetComponent<AudioSource>();
 
             AudioManager = new AudioManager(new Dictionary<AudioClipNames, AudioClipWithSpeed>
             {
-                { AudioClipNames.InitialStoryAudioClip, new AudioClipWithSpeed(InitialStoryAudioClip, environmentManager.GetInitialStorySpeed() ) },
+                { AudioClipNames.InitialStoryAudioClip, new AudioClipWithSpeed(InitialStoryAudioClip, EnvironmentManager.GetInitialStorySpeed() ) },
                 { AudioClipNames.MoveAndTargetTestObjectAudioClip, new AudioClipWithSpeed(MoveAndTargetTestObjectAudioClip) },
                 { AudioClipNames.GrabAndMoveTestObjectAudioClip, new AudioClipWithSpeed(GrabAndMoveTestObjectAudioClip) },
                 { AudioClipNames.FinishControlsExplanationAudioClip, new AudioClipWithSpeed(FinishGameControlExplanationAudioClip) },

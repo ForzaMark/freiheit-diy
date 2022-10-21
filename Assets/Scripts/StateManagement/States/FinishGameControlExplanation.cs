@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.StateManagement
@@ -13,15 +12,16 @@ namespace Assets.StateManagement
             yield return GameSystem.AudioManager.PlayClipSync(Scripts.AudioClipNames.FinishControlsExplanationAudioClip);
             GameSystem.ControlsTestObjectCube.SetActive(false);
 
-            EnablePlayerMovement();
+            GameSystem.EnvironmentManager.ProvideEnablePlayerMovementImplementation();
             EnablePlayerTableColliderArea();
 
             GameSystem.SetState(new WalkToTable(GameSystem));
         }
 
-        private void EnablePlayerMovement() {
-            GameSystem.XROrigin.GetComponent<CharacterController>().enabled = true;
-            GameSystem.XROrigin.GetComponent<ContinuousMovement>().enabled = true;
+        public static void EnablePlayerMovement(CharacterController characterController, ContinuousMovement continuousMovement) 
+        {
+            characterController.enabled = true;
+            continuousMovement.enabled = true;
         }
 
         private void EnablePlayerTableColliderArea()
