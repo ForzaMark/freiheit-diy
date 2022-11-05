@@ -6,3 +6,5 @@ Auf der Platine fehlt noch ein Bauteil.
 Greife jetzt die Zeitschrift um zu erkennen, welches Bauteil noch fehlt und wo du es einsetzen musst. 
 
 Achte dabei vorallem auf die Abbildungen in der Zeitschrift.
+
+Nimm anschließend dann das Bauteil und setze es ein.
