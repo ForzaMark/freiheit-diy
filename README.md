@@ -50,3 +50,5 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
          https://sketchfab.com/spogna License: CC Attribution-NonCommercial
          https://sketchfab.com/adresen License: CC Attribution
 - Fliesentisch: https://sketchfab.com/WunderWurst License: CC Attribution
+- Lamp: https://sketchfab.com/tijerin_art License: CC Attribution
+        https://sketchfab.com/rigart License: CC Attribution
