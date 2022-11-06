@@ -15,6 +15,7 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
     - Free Rug pack (https://assetstore.unity.com/packages/3d/props/interior/free-rug-pack-118178)
     - Retro Lamps (https://assetstore.unity.com/packages/3d/props/interior/retro-lamps-v-1-19601)
     - Interior Props Pack (https://assetstore.unity.com/packages/3d/props/interior/interior-props-pack-asset-86452)
+    - Simple Door Package (!ADD SOURCE!)
     - XR Interaction Toolkit & XR Plugin Management
       - Diese Assets sind bereits in Unity integriert. Um sie zu aktivieren gehe zu Windows -> Package Manager -> Wähle Packages: Unity Registry -> Suche nach "XR Interaction Toolkit" und "XR Plugin Management" -> importiere beide Packages
       - In "XR Interaction Toolkit" muss noch der Device Simulator aktiviert werden. Wähle dazu das Package "XR Interaction Toolkit" aus, erweitere den Tab "Samples" und importiere "XR Device Simulator"
@@ -41,3 +42,11 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
   - FinishGameControlExplanation
   - PlayerArrivedAtTable
   - PlayerPlacedTransistorCorrectly
+
+## Credits
+- Schuhschrank: https://sketchfab.com/wang2dog License: CC Attribution
+- Soviet Couch: https://sketchfab.com/R3indeer License: CC Attribution-NonCommercialCreative Commons Attribution-NonCommercial
+- Shoes: https://sketchfab.com/WirtualneMuzeaMalopolski License: CC0 Public Domain
+         https://sketchfab.com/spogna License: CC Attribution-NonCommercial
+         https://sketchfab.com/adresen License: CC Attribution
+- Fliesentisch: https://sketchfab.com/WunderWurst License: CC Attribution
