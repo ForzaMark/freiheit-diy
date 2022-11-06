@@ -13,7 +13,6 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
   - Um das Spiel lokal korrekt entwickeln zu können benötigst du folgende Assets die du aus dem Unity-Asset-Store kostenfrei herunterladen kannst
     - Old television PBR free (https://assetstore.unity.com/packages/3d/props/electronics/old-television-pbr-free-101886)
     - Free Rug pack (https://assetstore.unity.com/packages/3d/props/interior/free-rug-pack-118178)
-    - Retro Lamps (https://assetstore.unity.com/packages/3d/props/interior/retro-lamps-v-1-19601)
     - Interior Props Pack (https://assetstore.unity.com/packages/3d/props/interior/interior-props-pack-asset-86452)
     - Simple Door Package (!ADD SOURCE!)
     - XR Interaction Toolkit & XR Plugin Management
