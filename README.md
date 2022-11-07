@@ -44,10 +44,12 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
 
 ## Credits
 - Schuhschrank: https://sketchfab.com/wang2dog License: CC Attribution
-- Soviet Couch: https://sketchfab.com/R3indeer License: CC Attribution-NonCommercialCreative Commons Attribution-NonCommercial
+- Soviet Couch: https://sketchfab.com/R3indeer License: CC Attribution-NonCommercial
 - Shoes: https://sketchfab.com/WirtualneMuzeaMalopolski License: CC0 Public Domain
          https://sketchfab.com/spogna License: CC Attribution-NonCommercial
          https://sketchfab.com/adresen License: CC Attribution
 - Fliesentisch: https://sketchfab.com/WunderWurst License: CC Attribution
 - Lamp: https://sketchfab.com/tijerin_art License: CC Attribution
         https://sketchfab.com/rigart License: CC Attribution
+- PhotoFrame: https://sketchfab.com/ShreyasGarje License: CC Attribution
+- Photo Berlin: https://codingdavinci.de/daten/berliner-stadtansichten
