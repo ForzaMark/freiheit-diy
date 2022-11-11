@@ -29,6 +29,16 @@ namespace Assets.StateManagement
             var videoComponent = GameSystem.VideoScreen.GetComponent<VideoPlayer>();
             videoComponent.clip = GameSystem.SuccessVideo;
             videoComponent.Play();
+
+            videoComponent.loopPointReached += VideoEndReached;
+
+            var videoClipLength = GameSystem.SuccessVideo.length;
+        }
+
+        void VideoEndReached(UnityEngine.Video.VideoPlayer videoComponent)
+        {
+            videoComponent.clip = GameSystem.CreditVideo;
+            videoComponent.Play();
         }
     }
 }
