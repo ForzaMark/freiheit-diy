@@ -8697,7 +8697,7 @@ MonoBehaviour:
   SuccessVideo: {fileID: 32900000, guid: 423b0f14205fc9649bca0ec8e42a3ab5, type: 3}
   XROrigin: {fileID: 206701066}
   PlayerTablePositionColliderArea: {fileID: 1976123448}
-  Environment: 1
+  Environment: 0
   XrDeviceSimulator: {fileID: 1603161104}
   AudioSource: {fileID: 0}
 --- !u!4 &420155503
@@ -12901,7 +12901,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1eea719e37a5a9046ad15eac529bd7e9, type: 2}
+  - {fileID: 2100000, guid: d4149edcadc92764db6a2f9fcb96da70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16124,7 +16124,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1eea719e37a5a9046ad15eac529bd7e9, type: 2}
+  - {fileID: 2100000, guid: d4149edcadc92764db6a2f9fcb96da70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22010,7 +22010,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1eea719e37a5a9046ad15eac529bd7e9, type: 2}
+  - {fileID: 2100000, guid: d4149edcadc92764db6a2f9fcb96da70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23481,8 +23481,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202258980}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 11.07, y: 8.9800005, z: 20.95}
-  m_LocalScale: {x: 5.5192876, y: 4.223655, z: 1}
+  m_LocalPosition: {x: 11.096, y: 8.19, z: 21.701}
+  m_LocalScale: {x: 3.9760292, y: 3.042671, z: 0.7203881}
   m_Children: []
   m_Father: {fileID: 808923241}
   m_RootOrder: 12
@@ -30416,8 +30416,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570920653}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 11.16, y: 8.730001, z: 22.63}
-  m_LocalScale: {x: 8.224235, y: 8.224235, z: 8.224235}
+  m_LocalPosition: {x: 11.16, y: 8.01, z: 22.91}
+  m_LocalScale: {x: 5.9246407, y: 5.9246407, z: 5.9246407}
   m_Children: []
   m_Father: {fileID: 808923241}
   m_RootOrder: 11
@@ -35929,7 +35929,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1eea719e37a5a9046ad15eac529bd7e9, type: 2}
+  - {fileID: 2100000, guid: d4149edcadc92764db6a2f9fcb96da70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

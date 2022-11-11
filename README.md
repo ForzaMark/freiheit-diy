@@ -54,3 +54,4 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
 - PhotoFrame: https://sketchfab.com/ShreyasGarje License: CC Attribution
 - Photo Berlin: https://codingdavinci.de/daten/berliner-stadtansichten
 - other Photo: https://unsplash.com/@birminghammuseumstrust
+- Material for wall painting must be under closed source license
