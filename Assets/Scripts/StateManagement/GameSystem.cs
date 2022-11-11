@@ -49,6 +49,9 @@ namespace Assets.StateManagement
         public VideoClip SuccessVideo;
 
         [SerializeField]
+        public VideoClip CreditVideo;
+
+        [SerializeField]
         public GameObject XROrigin;
 
         [SerializeField]
