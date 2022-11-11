@@ -13,11 +13,12 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
   - Um das Spiel lokal korrekt entwickeln zu können benötigst du folgende Assets die du aus dem Unity-Asset-Store kostenfrei herunterladen kannst
     - Old television PBR free (https://assetstore.unity.com/packages/3d/props/electronics/old-television-pbr-free-101886)
     - Free Rug pack (https://assetstore.unity.com/packages/3d/props/interior/free-rug-pack-118178)
-    - Retro Lamps (https://assetstore.unity.com/packages/3d/props/interior/retro-lamps-v-1-19601)
     - Interior Props Pack (https://assetstore.unity.com/packages/3d/props/interior/interior-props-pack-asset-86452)
+    - Apartment Door (https://assetstore.unity.com/packages/3d/props/apartment-door-146225)
     - XR Interaction Toolkit & XR Plugin Management
       - Diese Assets sind bereits in Unity integriert. Um sie zu aktivieren gehe zu Windows -> Package Manager -> Wähle Packages: Unity Registry -> Suche nach "XR Interaction Toolkit" und "XR Plugin Management" -> importiere beide Packages
       - In "XR Interaction Toolkit" muss noch der Device Simulator aktiviert werden. Wähle dazu das Package "XR Interaction Toolkit" aus, erweitere den Tab "Samples" und importiere "XR Device Simulator"
+    - füge ggf. noch Texturen für die Wände und den Boden hinzu
 - Das Spiel sollte jetzt ausführbar sein. Gegebenenfalls fehlen dir noch Inputs wie das "Successvideo". Diese musst du händisch selbst importieren.
 - Hilf dabei das Spiel weiterzuentwickeln (Offene Issues findest du auf [Trello](https://trello.com/b/9MdesXd9/entwicklung)) 
 
@@ -41,3 +42,28 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
   - FinishGameControlExplanation
   - PlayerArrivedAtTable
   - PlayerPlacedTransistorCorrectly
+
+## :gem: Credits
+#### 3d-Modelle
+- Schuhschrank: 
+	- https://sketchfab.com/wang2dog - Lizenz: CC Attribution
+- Couch: 
+	- https://sketchfab.com/R3indeer - Lizenz: CC Attribution-NonCommercial
+- Schuhe: 
+	- https://sketchfab.com/WirtualneMuzeaMalopolski - Lizenz: CC0 Public Domain
+      - https://sketchfab.com/spogna - Lizenz: CC Attribution-NonCommercial
+      - https://sketchfab.com/adresen - Lizenz: CC Attribution
+- Fliesentisch: 
+	- https://sketchfab.com/WunderWurst - Lizenz: CC Attribution
+- Lampen: 
+	- https://sketchfab.com/tijerin_art - Lizenz: CC Attribution
+      - https://sketchfab.com/rigart - Lizenz: CC Attribution
+- Bilderrahmen: 
+	- https://sketchfab.com/ShreyasGarje - Lizenz: CC Attribution
+
+#### Bilder
+- Bild Berlin: https://codingdavinci.de/daten/berliner-stadtansichten
+- Natur Bild: https://unsplash.com/@birminghammuseumstrust
+
+#### Texturen
+- Die Texturen für Wände und Boden sind von https://www.textures.com/support/faq-license. Ihre Texturen können nicht unter Open-Source-Lizenz veröffentlicht werden. Deshalb haben die Wände und der Boden keine Textur die aber beliebig wieder hinzugefügt werden kann.
