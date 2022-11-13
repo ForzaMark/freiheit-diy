@@ -38833,6 +38833,69 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_text
+      value: "Mit der Aufnahme des Versuchsbetriebs f\xFCr das UHF-Fernsehen in der
+        DDR wurde das Dezimeterwellengebiet f\xFCr viele Amateure interessant. Bis
+        zur Er\xF6ffnung des zweiten Programms des Deutschen Fernsehfunks, das im
+        UHF-Gebiet ausgestrahlt wird, konnten daher schon vielseitige Erfahrungen
+        gewonnen werden. Die modernen Fernsehempf\xE4nger besitzen bereits die notwendige
+        technische Einrichtung f\xFCr den UHF-Empfang. Einige \xE4ltere Typen k\xF6nnen
+        mit einem UHF-Tuner nachger\xFCstet werden, viele jedoch sind noch nicht
+        daf\xFCr eingerichtet."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_fontSize
+      value: 0.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_margin.w
+      value: 26.706434
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_margin.x
+      value: 25.105255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_margin.y
+      value: 21.483875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_margin.z
+      value: 172.7091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104846615066121642, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2328176546222298617, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
       propertyPath: m_Name
       value: FunkamateurMagazine
@@ -38841,6 +38904,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1838401982}
+    - target: {fileID: 4260368430303133988, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4804588101621639174, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -38880,6 +38947,38 @@ PrefabInstance:
     - target: {fileID: 7990818357549114233, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96688783
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.25520197
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000002235174
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000001862645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028431742592264432, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 29.571
       objectReference: {fileID: 0}
     - target: {fileID: 9088076050464396882, guid: bc402e99d5fffcd4b95f10b6ca984a68, type: 3}
       propertyPath: m_RootOrder
