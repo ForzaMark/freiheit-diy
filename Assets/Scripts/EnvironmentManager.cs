@@ -58,7 +58,7 @@ namespace Assets.Scripts
         {
             if (Environment == GameEnvironment.LocalDevelopmentWithMockHeadset)
             {
-                MovePlayerByTeleportationCallback(XrOrigin);
+                // MovePlayerByTeleportationCallback(XrOrigin);
             }
         }
 
