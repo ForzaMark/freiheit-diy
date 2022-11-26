@@ -18,8 +18,8 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
     - XR Interaction Toolkit & XR Plugin Management
       - Diese Assets sind bereits in Unity integriert. Um sie zu aktivieren gehe zu Windows -> Package Manager -> Wähle Packages: Unity Registry -> Suche nach "XR Interaction Toolkit" und "XR Plugin Management" -> importiere beide Packages
       - In "XR Interaction Toolkit" muss noch der Device Simulator aktiviert werden. Wähle dazu das Package "XR Interaction Toolkit" aus, erweitere den Tab "Samples" und importiere "XR Device Simulator"
-    - füge ggf. noch Texturen für die Wände und den Boden hinzu
-- Das Spiel sollte jetzt ausführbar sein. Gegebenenfalls fehlen dir noch Inputs wie das "Successvideo". Diese musst du händisch selbst importieren.
+    - füge ggf. noch Texturen für die Wände und den Boden hinzu. Die Texturen für Wände und Boden können nicht in dem Repository bereitgestellt werden, da die Veröffentlicher nicht erlauben die Dateien unter einer Open-Source-Lizenz zu veröffentlichen. Die Textur für die Wände kann unter https://www.textures.com/download/WallpaperForties0002/18820 und die Textur für den Boden unter https://www.textures.com/download/PBR0826/139428 heruntergeladen werden.
+- Das Spiel sollte jetzt ausführbar sein. Gegebenenfalls fehlen dir noch Inputs wie das "Successvideo" und das "Credit Video". Diese musst du händisch selbst importieren.
 - Hilf dabei das Spiel weiterzuentwickeln (Offene Issues findest du auf [Trello](https://trello.com/b/9MdesXd9/entwicklung)) 
 
 ## :computer: Verschieden environments
