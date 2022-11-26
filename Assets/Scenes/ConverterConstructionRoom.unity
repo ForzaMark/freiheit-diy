@@ -8398,7 +8398,7 @@ MonoBehaviour:
   CreditVideo: {fileID: 0}
   XROrigin: {fileID: 206701066}
   PlayerTablePositionColliderArea: {fileID: 1976123448}
-  Environment: 1
+  Environment: 0
   XrDeviceSimulator: {fileID: 1603161104}
   AudioSource: {fileID: 0}
 --- !u!4 &420155503
