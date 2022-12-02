@@ -45,9 +45,6 @@ namespace Assets.StateManagement
         [SerializeField] 
         public GameObject VideoScreen;
 
-        [SerializeField] 
-        public VideoClip SuccessVideo;
-
         [SerializeField]
         public VideoClip CreditVideo;
 
