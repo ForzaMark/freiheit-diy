@@ -43807,8 +43807,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8086448406773458487}
-        m_TargetAssemblyTypeName: openMediathek, Assembly-CSharp
-        m_MethodName: OnGrab
+        m_TargetAssemblyTypeName: OnTvRemoteGrabbed, Assembly-CSharp
+        m_MethodName: remoteGrabbed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
