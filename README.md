@@ -60,6 +60,8 @@ Das Spiel wurde entwickelt von Anna Rauscher, Margret Schild und [Mark Heimer](m
       - https://sketchfab.com/rigart - Lizenz: CC Attribution
 - Bilderrahmen: 
 	- https://sketchfab.com/ShreyasGarje - Lizenz: CC Attribution
+- Fernbedienungn:
+	- https://sketchfab.com/pcosfaj - Lizenz: CC Attribution
 
 #### Bilder
 - Bild Berlin: https://codingdavinci.de/daten/berliner-stadtansichten

@@ -8394,7 +8394,6 @@ MonoBehaviour:
   UiEventsMessageBroker: {fileID: 11400000, guid: bf62acd372786594590ade12ae73e346, type: 2}
   Transistor: {fileID: 874295177}
   VideoScreen: {fileID: 1202258980}
-  SuccessVideo: {fileID: 32900000, guid: f0a677706450d0b43af029d29c662a00, type: 3}
   CreditVideo: {fileID: 32900000, guid: 7e9b5c2d76b33ad41893a1ff5a31a2f9, type: 3}
   XROrigin: {fileID: 206701066}
   PlayerTablePositionColliderArea: {fileID: 1976123448}
@@ -30550,7 +30549,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
