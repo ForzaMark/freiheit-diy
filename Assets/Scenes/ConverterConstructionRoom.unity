@@ -13181,7 +13181,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 58a499219b59402458a28f9f62c0957e, type: 2}
+  - {fileID: 2100000, guid: cdcd08d400929f84ba79303a0a00be08, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23665,7 +23665,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 556bbc96a350e7d47bc4f3005261c6ab, type: 2}
+  - {fileID: 2100000, guid: af8e294b7b328f4468e3f795dece4f02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46525,6 +46525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FunkamateurMagazine
       objectReference: {fileID: 0}
+    - target: {fileID: 7352674814302279916, guid: 41e223822b891c342a4800339003ab88, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb462a9c5041c3745b70e97f33b374cf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41e223822b891c342a4800339003ab88, type: 3}
 --- !u!224 &7352674815863328975 stripped
