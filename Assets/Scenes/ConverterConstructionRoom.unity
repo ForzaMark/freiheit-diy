@@ -1997,7 +1997,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b35c2a90fa407e5488c945a63a500b51, type: 2}
     - target: {fileID: 919132149155446097, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
       propertyPath: m_Name
-      value: canguro (3)
+      value: Shoes(5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
@@ -2630,7 +2630,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b35c2a90fa407e5488c945a63a500b51, type: 2}
     - target: {fileID: 919132149155446097, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
       propertyPath: m_Name
-      value: canguro (2)
+      value: Shoes(4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
@@ -5627,7 +5627,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100072, guid: f054e366653a7c14186595569de398f9, type: 3}
       propertyPath: m_Name
-      value: SimpleDoor
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 400072, guid: f054e366653a7c14186595569de398f9, type: 3}
       propertyPath: m_RootOrder
@@ -7603,7 +7603,7 @@ GameObject:
   - component: {fileID: 352725936}
   - component: {fileID: 352725937}
   m_Layer: 0
-  m_Name: Point Light (2)
+  m_Name: PointLight (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8816,7 +8816,7 @@ MonoBehaviour:
   CreditVideo: {fileID: 32900000, guid: 7e9b5c2d76b33ad41893a1ff5a31a2f9, type: 3}
   XROrigin: {fileID: 206701066}
   PlayerTablePositionColliderArea: {fileID: 1976123448}
-  Environment: 2
+  Environment: 1
   XrDeviceSimulator: {fileID: 1603161104}
   AudioSource: {fileID: 0}
 --- !u!4 &420155503
@@ -10546,7 +10546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e79a7323dd46a2244a8659c096941b13, type: 3}
       propertyPath: m_Name
-      value: shoe_shelf
+      value: ShoeShelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e79a7323dd46a2244a8659c096941b13, type: 3}
@@ -10719,7 +10719,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b35c2a90fa407e5488c945a63a500b51, type: 2}
     - target: {fileID: 919132149155446097, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
       propertyPath: m_Name
-      value: canguro
+      value: Shoes(2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
@@ -11024,7 +11024,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1974078223497576, guid: 31805c41f7dac8d478aee32600308a90, type: 3}
       propertyPath: m_Name
-      value: Pic2
+      value: Pic
       objectReference: {fileID: 0}
     - target: {fileID: 4479084676281656, guid: 31805c41f7dac8d478aee32600308a90, type: 3}
       propertyPath: m_RootOrder
@@ -12744,7 +12744,7 @@ GameObject:
   - component: {fileID: 617612381}
   - component: {fileID: 617612382}
   m_Layer: 0
-  m_Name: Point Light (1)
+  m_Name: PointLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12918,7 +12918,7 @@ GameObject:
   - component: {fileID: 623245195}
   - component: {fileID: 623245196}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: PointLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15459,7 +15459,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: afb7d26a9a9520446b04112fdfa26247, type: 2}
     - target: {fileID: 919132149155446097, guid: 8217661ca73b8e44081dda30a6760b9a, type: 3}
       propertyPath: m_Name
-      value: Chassures
+      value: Shoes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8217661ca73b8e44081dda30a6760b9a, type: 3}
@@ -23815,7 +23815,7 @@ GameObject:
   - component: {fileID: 1222203391}
   - component: {fileID: 1222203392}
   m_Layer: 0
-  m_Name: Point Light (3)
+  m_Name: PointLight (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29961,7 +29961,7 @@ GameObject:
   - component: {fileID: 1502903705}
   - component: {fileID: 1502903706}
   m_Layer: 0
-  m_Name: Point Light (4)
+  m_Name: PointLight (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30207,7 +30207,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 45cd64ba0249f9546836e5e4f8cd35a5, type: 2}
     - target: {fileID: 919132149155446097, guid: 60a39ce6a1827b64cb16a22e16968985, type: 3}
       propertyPath: m_Name
-      value: Lampara techo
+      value: CouchLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a39ce6a1827b64cb16a22e16968985, type: 3}
@@ -30791,7 +30791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 90cd61b73cf8b83478258722b3eb617d, type: 3}
       propertyPath: m_Name
-      value: Fliesentisch
+      value: Table
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90cd61b73cf8b83478258722b3eb617d, type: 3}
@@ -35146,7 +35146,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 67ff0d3090eca8343a2d97e5929274f1, type: 2}
     - target: {fileID: 919132149155446097, guid: 3441e5434760ffe4a9061dcc1878c616, type: 3}
       propertyPath: m_Name
-      value: MSH_Sofa_Soviet
+      value: Couch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3441e5434760ffe4a9061dcc1878c616, type: 3}
@@ -35383,7 +35383,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b35c2a90fa407e5488c945a63a500b51, type: 2}
     - target: {fileID: 919132149155446097, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
       propertyPath: m_Name
-      value: canguro (1)
+      value: Shoes(3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97fdb9857485e494f939344778ef21e7, type: 3}
@@ -36854,7 +36854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 60a39ce6a1827b64cb16a22e16968985, type: 3}
       propertyPath: m_Name
-      value: Lampara techo (1)
+      value: EntranceAndTableLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a39ce6a1827b64cb16a22e16968985, type: 3}
@@ -40554,7 +40554,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8df5c23d41f51c64788b011af0bef0be, type: 2}
     - target: {fileID: 919132149155446097, guid: 4098d023383308344bc2b3848ca77919, type: 3}
       propertyPath: m_Name
-      value: sketchfab_96_X_Buty_sportowe_Karola_Wojtyly.FBX
+      value: Shoes(1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4098d023383308344bc2b3848ca77919, type: 3}
@@ -42761,7 +42761,7 @@ GameObject:
   - component: {fileID: 2711301754107356603}
   - component: {fileID: 163411468537467249}
   m_Layer: 0
-  m_Name: Photo Frame (1)
+  m_Name: Pic(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44585,7 +44585,7 @@ GameObject:
   - component: {fileID: 487157311179168751}
   - component: {fileID: 2388682103836471077}
   m_Layer: 0
-  m_Name: Photo Frame
+  m_Name: PhotoFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46856,7 +46856,7 @@ GameObject:
   - component: {fileID: 8086448406773458484}
   - component: {fileID: 8086448406773458487}
   m_Layer: 0
-  m_Name: mando_tv
+  m_Name: RemoteControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
