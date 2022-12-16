@@ -1,15 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-enum EmissionStates
-{
-    Switching,
-    ShutDown,
-    PermanentEnabled
-}
-
-public class AnimateTransistorTargetAreaOnTransistorGrabed : MonoBehaviour
+public class OnTransistorGrabed : MonoBehaviour
 {
     [SerializeField] GameObject TransistorTargetArea;
 
