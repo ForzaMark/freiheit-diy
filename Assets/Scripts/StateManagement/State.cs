@@ -1,7 +1,5 @@
 using System.Collections;
 
-
-
 namespace Assets.StateManagement
 {
     public enum StateName

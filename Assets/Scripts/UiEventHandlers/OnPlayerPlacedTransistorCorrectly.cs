@@ -1,4 +1,4 @@
-﻿        using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.UiEventHandlers
 {
@@ -21,7 +21,7 @@ namespace Assets.Scripts.UiEventHandlers
         {
             if (collision.gameObject.name == "TransistorTargetArea")
             {
-                this.IsTransistorInTargetArea = true;
+                IsTransistorInTargetArea = true;
             }
         }
 
@@ -29,7 +29,7 @@ namespace Assets.Scripts.UiEventHandlers
         {
             if (collision.gameObject.name == "TransistorTargetArea")
             {
-                this.IsTransistorInTargetArea = false;
+                IsTransistorInTargetArea = false;
             }
         }
     }
